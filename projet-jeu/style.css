@@ -1,0 +1,167 @@
+* {
+    font-family: "GameFont";
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../projet-jeu/Images/Montagne.jpeg);
+    background-size: cover;
+}
+
+@font-face{
+    font-family: "GameFont";
+    src:url(../projet-jeu/Fonts/ReturnofGanon.ttf);
+}
+
+header {
+    font-size: 3em;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:none;
+    text-align : center;
+}
+
+audio{
+    display:none;
+}
+
+input {
+    font-size: 2em;
+    color: white;
+    border-color: none;
+    background-color:gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Start {
+    display:flex;
+    margin-bottom: 1em;;
+}
+
+#console {
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+#globalBoard {
+    visibility: hidden;
+    position: relative;
+    display:inline-block;
+}
+
+#board {
+    height: 550px;
+    width: 500px;
+    position: relative;
+}
+
+#board div {
+   display:flex;
+  
+}
+
+#board div div {
+    height: 50px;
+    width: 50px;
+}
+
+#absoluteBoard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.player {
+    width: 50px;
+    height: 65px;
+    background-image: url('../projet-jeu/Images/Link\ Resized.png');
+    background-position: 0 30%;
+    z-index: 98;
+}
+
+.player.R {
+    background-position: 1px 44%;
+    background-size: 963%;
+}
+.player.L {
+    background-position: 1px 15%;
+    background-size: 963%;
+}
+.player.U {
+    background-position: 1px 30%;
+    background-size: 963%;
+}
+.player.D {
+    background-position: 3px 1%;
+    background-size: 963%;
+}
+
+.boss {
+    width: 40px;
+    height: 50px;
+    background-image: url('../projet-jeu/Images/bosses\ sprite.png');
+    z-index: 99;
+}
+
+.boss.U {
+    background-position: 245px 23%;
+}
+.boss.D {
+    background-position: 164px 23%;
+}
+
+.door{
+    background-image: url('../projet-jeu/Images/Sprite\ door.png');
+    z-index: 100;
+}
+
+.door.C {
+    background-position: 7% 0%;
+    background-size: 445%;
+}
+
+.door.O.A {
+    background-position: 7% 34%;
+    background-size: 445%;
+}
+
+.door.O.B {
+    background-position: 7% 67%;
+    background-size: 445%;
+}
+
+.door.O.C {
+    background-position: 7% 100%;
+    background-size: 445%;
+}
+
+#textBox {
+    width:50%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#bossQuestion {
+    width: 100%;
+    height: 40%;
+    color: white;
+    padding: 1em;
+    font-size: 2em;
+}
+
+#playerAnswer{
+    width: 100%;
+    height: 40%;
+    color: white;
+    margin-top:auto;
+    padding: 1em;
+    font-size: 2em;
+}
